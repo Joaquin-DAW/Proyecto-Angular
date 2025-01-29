@@ -27,4 +27,8 @@ export class EmpleadoComponent {
   ng0nInit(){
     console.log(this.trabajador)
   }
+
+  cambiarExterno(valor:boolean){
+    this.trabajadorExterno=valor;
+  }
 }

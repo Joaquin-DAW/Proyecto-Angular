@@ -10,8 +10,10 @@
 
 <ul>
     @if (trabajadorExterno) {
+        <button (click)="cambiarExterno(false)">Mostrar internos</button>
         <li>{{empleadoExt.nombre}}</li>
     }@else{
+        <button (click)="cambiarExterno(true)">Mostrar externos</button>
         <li>Lista de trabajadores internos</li>
     }
 </ul>
