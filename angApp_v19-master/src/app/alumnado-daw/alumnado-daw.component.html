@@ -1,0 +1,41 @@
+<p>alumnado-daw works!</p>
+
+<h1>Listado de alumnos de DAW</h1>
+
+<button (click)="mostrarTodos()">Mostrar todos</button>
+<button (click)="mostrarPrimerAno()">Mostrar primer año</button>
+<button (click)="mostrarSegundoAno()">Mostrar segundo año</button>
+
+@if (filtro == '1-DAW') {
+    @for (alumnado of alumnadoDAW; track alumnado.nombre) {
+        @if (alumnado.curso == '1-DAW') {
+        <ul>
+            <li><b>Nombre:</b> {{alumnado.nombre}}</li>
+            <li><b>Apellidos:</b> {{alumnado.apellidos}}</li>
+            <li><b>DNI:</b> {{alumnado.dni}}</li>
+            <li><b>Fecha de nacimiento:</b> {{alumnado.fechaNac}}</li>
+            <li><b>Población:</b> {{alumnado.poblacion}}</li>
+            <li><b>Teléfono:</b> {{alumnado.telefono}}</li>
+            <li><b>Curso: </b>{{alumnado.curso}}</li>
+            <li><b>Módulos:</b> {{alumnado.modulos}}</li>
+        </ul>
+        }
+    }
+}
+
+@if (filtro == '2-DAW') {
+    @for (alumnado of alumnadoDAW; track alumnado.nombre) {
+        @if (alumnado.curso == '2-DAW') {
+        <ul>
+            <li><b>Nombre:</b> {{alumnado.nombre}}</li>
+            <li><b>Apellidos:</b> {{alumnado.apellidos}}</li>
+            <li><b>DNI:</b> {{alumnado.dni}}</li>
+            <li><b>Fecha de nacimiento:</b> {{alumnado.fechaNac}}</li>
+            <li><b>Población:</b> {{alumnado.poblacion}}</li>
+            <li><b>Teléfono:</b> {{alumnado.telefono}}</li>
+            <li><b>Curso: </b>{{alumnado.curso}}</li>
+            <li><b>Módulos:</b> {{alumnado.modulos}}</li>
+        </ul>
+        }
+    }
+}
